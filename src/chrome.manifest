@@ -1,0 +1,4 @@
+content   unreadcount                 chrome/content/
+skin      unreadcount   classic/1.0   chrome/skin/
+locale    unreadcount   en-US         chrome/locale/en-US/
+overlay chrome://messenger/content/messenger.xul chrome://unreadcount/content/unreadcount.xul
