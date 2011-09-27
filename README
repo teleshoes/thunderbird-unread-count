@@ -1,0 +1,10 @@
+Thunderbird Unread Count 0.0.1
+Copyright 2011 by Elliot Wolk
+based on Docky Unread Count 0.6.3 by Lukasz Piepiora
+
+Licensed under the GPLv3
+
+
+Writes unread email counts for each account in Thunderbird to a file.
+Enables reading and displaying in, e.g., in xmobar or dzen2
+
