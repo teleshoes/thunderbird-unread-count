@@ -23,6 +23,7 @@
     <em:creator>Elliot Wolk using Lukasz Piepiora's dockyunread without support or endorsement from same</em:creator>
     <em:developer>Elliot Wolk using Lukasz Piepiora's dockyunread without support or endorsement from same</em:developer>
     <em:contributor>Stefan Bethge was a contributor on dockyunread</em:contributor>
+    <em:contributor>Some code taken from Alex Cabal's AWN Unread Count</em:contributor>
     
   </Description>
 </RDF>
