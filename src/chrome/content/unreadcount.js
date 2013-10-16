@@ -1,3 +1,5 @@
+Components.utils.import("resource://app/modules/iteratorUtils.jsm");
+
 var unreadcount = {
 	MSG_FOLDER_FLAG_INBOX: 0x1000,
 	onLoad : function(e) {
@@ -62,12 +64,8 @@ var unreadcount = {
 	
 	performUnreadCount: function(that) {
 		dump("Counting unread messages...\n");
-		var acctMgr = Components.classes["@mozilla.org/messenger/account-manager;1"].getService(Components.interfaces.nsIMsgAccountManager);
-		var accounts = acctMgr.accounts;
 		var countMessage = "";
-		dump("Found " + accounts.Count() + " accounts\n");
-		for (var i = 0; i < accounts.Count(); i++) {
-			var account = accounts.QueryElementAt(i, Components.interfaces.nsIMsgAccount);
+        for each(let account in fixIterator(MailServices.accounts.accounts, Components.interfaces.nsIMsgAccount)){
 			var rootFolder = account.incomingServer.rootFolder; // nsIMsgFolder            
 				if (rootFolder.hasSubFolders) {
 					countMessage += that.getTotalCount(rootFolder) + ":" + account.incomingServer.prettyName + "\n";
