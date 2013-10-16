@@ -4,7 +4,7 @@
     <em:id>unreadcount@teleshoes.com</em:id>
     <em:type>2</em:type>
     <em:name>Unread Count</em:name>
-    <em:version>0.0.1</em:version>
+    <em:version>0.0.2</em:version>
     
     <em:description>Sends number of unread messages per account to a file called unread-counts in the profile root directory.</em:description>
     <em:aboutURL>chrome://unreadcount/content/about.xul</em:aboutURL>
